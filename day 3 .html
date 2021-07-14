@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<center>
+<br>
+<h1><u>Mathematical Operations</u></h1>
+<br>
+<table border=10>
+<tr>
+	<td>
+	<b>
+Number-1
+</b>
+
+<input type="text" class="inp" id="num1" />
+<br>
+<tr>
+	<td>
+		<b>
+			number 2
+		</b>
+<input type="text" class="inp" id="num2" /><br>
+
+<tr><td><b>Operations</b>
+<input type="button" class="btn" value=+ onclick="add()" />
+<input type="button" class="btn" value=- onclick="sub()" />
+<input type="button" class="btn" value=* onclick="mul()" />
+<input type="button" class="btn" value=/ onclick="div()" />
+
+</table>
+
+<p id="p1"> <p>
+
+
+<script>
+function add()
+{
+a=parseInt(num1.value)+parseInt(num2.value)
+p1.innerHTML="Addition is: " + a 
+}
+function sub()
+{
+b=parseInt(num1.value) - parseInt(num2.value)
+p1.innerHTML="Subtarction is: " + b
+}
+function mul()
+{
+c=parseInt(num1.value)*parseInt(num2.value)
+p1.innerHTML="Multiplication is: " + c
+}
+function div()
+{
+d=parseInt(num1.value)/parseInt(num2.value)
+p1.innerHTML="Division is: " + d
+}
+</script>
+</center>
+
+</body>
+</html>
