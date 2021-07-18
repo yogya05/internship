@@ -1,0 +1,26 @@
+<br>
+<center>
+<h1><u>Registration form with proper validation</u><h1>
+<form action="noaction.php" >
+<table border=1>
+<tr> <th> User id </th> <td> <input type="text" id="userid"  required pattern="0827CI201[0-9]{3}" /> </td> 
+<tr> <th> Password </th> <td> <input type="Password" id="password" required pattern="[a-zA-Z]{4,8}[@][0-9]{4,8}" /> </td> 
+<tr> <th> Name </th> <td> <input type="text" id="name" required pattern="[a-zA-Z ]{2,20}" /> </td> 
+<tr> <th> Father's name </th> <td> <input type="text" id="fname" required pattern="[a-zA-Z ]{2,20}" /> </td> 
+<tr> <th> Date of birth </th> <td> <input type="date" id="dob" required /> </td> 
+<tr> <th> Adress </th> <td> <input type="text" id="add" required pattern="\w{3,50}" /> </td> 
+<tr> <th> Mobile no </th> <td> <input type="number" id="mob" required pattern="[0-9]{10}" /> </td>
+<tr> <th> Cast </th> <td> <input type="text" id="cast" required pattern="[a-zA-Z]{2-10}" /> </td> 
+<tr> <th> Religion </th> <td> <input type="text" id="rel" required pattern="[a-zA-Z]{2-10}" /> </td> 
+<tr> <th> Country </th> <td> <select id="s1" required > 
+<option>Select your country </option>
+<option> india </option> 
+<option> Nepal </option>
+<option> China </option>
+<option> Bhutan </option>
+</select> </td> </tr>
+<tr> <td> </td> <td><input type="submit" value="Submit" onclick="reg()" /> </td>
+</table>
+</form>
+
+</center>
